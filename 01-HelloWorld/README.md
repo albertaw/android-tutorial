@@ -39,6 +39,8 @@ Navigate to the res folder then layout and open the activity_main.xml file. Dele
 </LinearLayout>
 ```
 
+![MainActivity view](https://github.com/albertaw/androidtutorial/blob/master/01-HelloWorld/android_hello_world_main_activity.png)
+
 The `layout_width` and `layout_height` are mandatory for the linear layout. The value `match_parent` means the view should fill the entire width or height of it’s parent. The value `wrap_content` means the view should only take up as much space as it’s content.  The hint in the EditText and the Button text use string resources. The general format for accessing resources in the XML is `@resourceType/resourceName`.  String resources are kept in res-->values-->strings.  To add a new string you add a `<string></string>` tag and give it a name using the name attribute and give it a value by putting the text in between the tag. The string resource for our hint is `<string name="name_hint">Enter your name</string>`.  The EditText and Button also have an `id` attribute so they can referenced in our code later.  The id attribute begins `@+id` because it is being created not accessed. 
 
 ## Step 2 - Create a link to hello screen
