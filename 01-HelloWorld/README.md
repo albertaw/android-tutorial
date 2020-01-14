@@ -1,15 +1,13 @@
 
 
-Getting started with Android
--------------------------------
+# Getting started with Android
 
-Introduction
-=======================
+
+## Introduction
 
 We will be making a hello world app so you can learn the very basics of creating an app in Android. The app will consist of two pages. On the first page there will be an input to type your name and a button. Clicking the button will take you to the second page where you will see a greeting on the screen with the name you typed. To accomplish this, you will learn about activities, resources, intents, and click listeners. The first step will be to create a view for the first page with the input field and submit button. In the second step we will add the functionality to show the second view when the button is clicked. And in the third step, we will create the second view.
 
-Step 1 - Edit main screen
-============================
+## Step 1 - Edit main screen
 
 We will begin by creating our first view. First, download android studio if you do not already have it:
 
@@ -43,8 +41,8 @@ Navigate to the res folder then layout and open the activity_main.xml file. Dele
 
 The `layout_width` and `layout_height` are mandatory for the linear layout. The value `match_parent` means the view should fill the entire width or height of it’s parent. The value `wrap_content` means the view should only take up as much space as it’s content.  The hint in the EditText and the Button text use string resources. The general format for accessing resources in the XML is `@resourceType/resourceName`.  String resources are kept in res-->values-->strings.  To add a new string you add a `<string></string>` tag and give it a name using the name attribute and give it a value by putting the text in between the tag. The string resource for our hint is `<string name="name_hint">Enter your name</string>`.  The EditText and Button also have an `id` attribute so they can referenced in our code later.  The id attribute begins `@+id` because it is being created not accessed. 
 
-Step 2 - Create a link to hello screen
-======================================
+## Step 2 - Create a link to hello screen
+
 
 Next, we will add a click listener to our button that will take the text entered into our input field and send it to the second screen. Open the MainActivity.java file located in app-->java-->com.example.android.helloworld. This is the activity for our view. Activities display the UI and act as a controller for our app. First we will get a reference to the button view. The general form to access a resource in code is `R.resourceType.resourceName`. The resource type we will use to get our button is the id. The resource name is submit_button. Here is the code:
 
@@ -122,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-Step 3 -  Create the hello view
-================================
+## Step 3 -  Create the hello view
+
 
 In this last step we will create the new activity and populate our view with the text we entered. To create a new activity right click on the package name and choose new-->activity-->empty activity. Give it the name HelloActivity. This action creates a layout file named activity_hello.xml. and registers the activity in the Android manifest. Replace the contents of the layout file with the following:
 
@@ -175,13 +173,13 @@ public class HelloActivity extends AppCompatActivity {
 ```
 
 
-Summary
-=====================
+## Summary
+
 
 To review, first we created a screen in our MainActivity class with a Button and EditText view. An activity is where the app draws its UI. We added an onClickListener to the button which extracted the name for the EditText and created an intent to send the name to the HelloActivity. An intent starts a new activity. In the next tutorial we will see how to create a todo app that displays a list of items using and array adapter.
 
-Resources
-======================
+## Resources
+
 
 - [Udacity Android Basics: User Interface](https://www.udacity.com/course/android-basics-user-interface--ud834)
 - [Udacity Android Basics: User Input](https://www.udacity.com/course/android-basics-user-input--ud836)
