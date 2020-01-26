@@ -127,7 +127,7 @@ ListView listView = findViewById(R.id.list);
 listView.setAdapter(adapter);
 ```
 
-![Book list activity](./android_bookslist_activity.png)
+![Book list activity](./android_booklist_activity.png)
 
 Using a custom array adapter to create a list of books
 ================================================
