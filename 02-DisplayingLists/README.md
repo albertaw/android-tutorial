@@ -292,7 +292,7 @@ ListView listView = findViewById(R.id.list);
 listView.setAdapter(adapter);
 ```
 
-![Custom book list activity](./android_booklist2_activity.png =50%x)
+![Custom book list activity](./android_booklist2_activity.png)
 
 As an exercise, repeat the above steps for the other category activities.
 
@@ -380,7 +380,7 @@ TextView descriptionTextView = findViewById(R.id.book_description_detail);
 descriptionTextView.setText(book.getDescription());
 ```
 
-![Book detail view](./android_bookdetail_activity.png =50%x)
+![Book detail view](./android_bookdetail_activity.png =50x)
 
 Summary
 ============================
