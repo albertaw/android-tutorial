@@ -42,7 +42,7 @@ Navigate to the res folder then layout and open the activity_main.xml file. Dele
 <img 
   src="https://github.com/albertaw/androidtutorial/blob/master/01-HelloWorld/android_hello_world_main_activity.png"
   alt="MainActivity"
-  style="width: 40%;" />
+  style="width:40%;" />
 
 The `layout_width` and `layout_height` are mandatory for the linear layout. The value `match_parent` means the view should fill the entire width or height of it’s parent. The value `wrap_content` means the view should only take up as much space as it’s content.  The hint in the EditText and the Button text use string resources. The general format for accessing resources in the XML is `@resourceType/resourceName`.  String resources are kept in res-->values-->strings.  To add a new string you add a `<string></string>` tag and give it a name using the name attribute and give it a value by putting the text in between the tag. The string resource for our hint is `<string name="name_hint">Enter your name</string>`.  The EditText and Button also have an `id` attribute so they can referenced in our code later.  The id attribute begins `@+id` because it is being created not accessed. 
 
@@ -181,7 +181,7 @@ public class HelloActivity extends AppCompatActivity {
 ## Summary
 
 
-To review, first we created a screen in our MainActivity class with a Button and EditText view. An activity is where the app draws its UI. We added an onClickListener to the button which extracted the name for the EditText and created an intent to send the name to the HelloActivity. An intent starts a new activity. In the next tutorial we will see how to create a todo app that displays a list of items using and array adapter.
+To review, first we created a screen in our MainActivity class with a Button and EditText view. An activity is where the app draws its UI. We added an onClickListener to the button which extracted the name for the EditText and created an intent to send the name to the HelloActivity. An intent starts a new activity. In the next tutorial we will see how to create a bookstore app that displays a list of books using using a string string array, ArrayAdapter, and a custom ArrayAdapter.
 
 ## Resources
 
