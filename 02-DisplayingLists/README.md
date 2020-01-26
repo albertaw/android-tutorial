@@ -52,7 +52,7 @@ Second, open the activity_main layout. Erase the contents and add a vertical Lin
 </LinearLayout>
 ```
 
-![List of genres](./android_bookstore_main_activity.png =50%x)
+![List of genres](./android_bookstore_main_activity.png)
 
 Third, we add click listeners to each category view. First we get a reference to the ListView we created. 
 
@@ -127,7 +127,7 @@ ListView listView = findViewById(R.id.list);
 listView.setAdapter(adapter);
 ```
 
-![Book list activity](./android_bookslist_activity.png =50%x)
+![Book list activity](./android_bookslist_activity.png)
 
 Using a custom array adapter to create a list of books
 ================================================
@@ -380,7 +380,7 @@ TextView descriptionTextView = findViewById(R.id.book_description_detail);
 descriptionTextView.setText(book.getDescription());
 ```
 
-![Book detail view](./android_bookdetail_activity.png =50x)
+![Book detail view](./android_bookdetail_activity.png)
 
 Summary
 ============================
