@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Book Store</string>
+    <string-array name="genres">
+        <item>Horror</item>
+        <item>Romance</item>
+        <item>Science Fiction</item>
+    </string-array>
+</resources>
