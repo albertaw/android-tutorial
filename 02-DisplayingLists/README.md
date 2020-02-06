@@ -391,7 +391,7 @@ First we used a string array to create a list of categories for the books. We de
 Resources
 ============================
 
-- [Udacity Android Basics: Multiscreen Apps]https://www.udacity.com/course/android-basics-multiscreen-apps--ud839
+- [Udacity Android Basics: Multiscreen Apps](https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)
 - [Head First Android Development, 2nd Edition](https://learning.oreilly.com/library/view/head-first-android/9781491974049/)
 - [Android AdapterView.OnItemClickListener Documentation](https://developer.android.com/reference/android/widget/AdapterView.OnItemClickListener)
 - [Android Adapter Documentation](https://developer.android.com/reference/android/widget/Adapter.html)
